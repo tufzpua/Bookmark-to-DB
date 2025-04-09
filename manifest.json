@@ -1,0 +1,30 @@
+{
+  "manifest_version": 2,
+  "name": "Bookmark to DB",
+  "version": "1.2",
+  "description": "Сохраняет текущую страницу в таблицу bookmarks MariaDB",
+  "icons": {
+    "48": "icons/icon-48.png",
+    "96": "icons/icon-96.png"
+  },
+  "permissions": [
+    "activeTab",
+    "storage",
+    "notifications"
+  ],
+  "background": {
+    "scripts": ["background.js"]
+  },
+  "options_ui": {
+    "page": "options/options.html",
+    "browser_style": true,
+    "open_in_tab": false
+  },
+  "browser_action": {
+    "default_icon": {
+      "16": "icons/icon-16.png",
+      "32": "icons/icon-32.png"
+    },
+    "default_title": "Сохранить в закладки"
+  }
+}

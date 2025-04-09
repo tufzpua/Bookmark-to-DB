@@ -1,0 +1,6 @@
+CREATE TABLE IF NOT EXISTS saved_urls (
+  id INT AUTO_INCREMENT PRIMARY KEY,
+  url VARCHAR(2048) NOT NULL,
+  created_at DATETIME NOT NULL,
+  UNIQUE KEY unique_url (url)
+);
